@@ -22,10 +22,14 @@ def make_player(firstname, lastname, age, height, weight, position):
         "position": position,
     }
 
+
 registered_player = make_player("firstname", "lastname", "age", "height", "weight", "position")
+
 
 with open("football_players.txt", "w") as football_file:
     football_file.write(str(registered_player))
 
+
 print("Your registered successfully.")
+
 print(f"You are {firstname} {lastname}, your height is {height} & your weight is {weight}. Your best playing position is {position}.".format(registered_player))
